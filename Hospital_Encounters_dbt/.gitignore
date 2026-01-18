@@ -1,0 +1,7 @@
+# Local environment variables (never commit secrets)
+.env
+
+# dbt generated / local-only artifacts
+target/
+dbt_packages/
+logs/

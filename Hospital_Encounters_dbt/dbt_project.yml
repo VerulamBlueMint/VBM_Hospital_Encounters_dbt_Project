@@ -1,0 +1,54 @@
+name: 'Hospital_Encounters_dbt'
+version: '1.0.0'
+
+profile: 'Hospital_Encounters_dbt'
+
+model-paths: ["models"]
+analysis-paths: ["analyses"]
+test-paths: ["tests"]
+seed-paths: ["seeds"]
+macro-paths: ["macros"]
+snapshot-paths: ["snapshots"]
+
+clean-targets:         # directories to be removed by `dbt clean`
+  - "target"
+  - "dbt_packages"
+
+vars:
+  bronze_database: "Hospital_Encounters_Warehouse"
+  bronze_schema: "bronze"
+  bronze_table: "C08_l01_healthcare_encounters_data_table"
+
+models:
+  Hospital_Encounters_dbt:
+    +persist_docs:
+      relation: false
+      columns: false
+
+    staging:
+      +schema: staging
+      +materialized: view
+
+    intermediate:
+      +schema: intermediate
+      +materialized: view
+
+    silver:
+      +schema: silver
+      +materialized: table
+
+    gold:
+      +schema: gold
+      +materialized: table
+
+    kpis:
+      +schema: gold
+      +materialized: view
+      +tags: ["kpis"]
+
+seeds:
+  Hospital_Encounters_dbt:
+    mappings:
+      +schema: staging
+      +quote_columns: false
+

@@ -1,0 +1,18 @@
+Hospital_Encounters_dbt:
+  target: dev
+  outputs:
+    dev:
+      type: fabric
+      driver: "ODBC Driver 18 for SQL Server"
+      server: "{{ env_var('Fabric_Server') }}"
+      port: 1433
+      database: "{{ env_var('Fabric_Warehouse_Name') }}"
+      schema: "{{ env_var('DBT_TARGET_SCHEMA_In_Fabric') }}"
+
+      authentication: "ServicePrincipal"
+      tenant_id: "{{ env_var('DBT_ENV_SECRET_Azure_Tenant_ID') }}"
+      client_id: "{{ env_var('DBT_ENV_SECRET_Azure_Client_ID') }}"
+      client_secret: "{{ env_var('DBT_ENV_SECRET_Azure_Client_Secret') }}"
+
+      encrypt: true
+      trust_cert: false

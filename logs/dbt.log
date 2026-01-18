@@ -1,0 +1,30 @@
+[0m15:37:58.593078 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C48D29640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C49129AF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C4890DD60>]}
+[0m15:37:58.612940 [debug] [MainThread]: An error was encountered while trying to send an event
+
+
+============================== 15:37:58.612940 | 72fe4e7f-2a64-40df-a320-bf71c0ddd076 ==============================
+[0m15:37:58.612940 [info ] [MainThread]: Running with dbt=1.11.2
+[0m15:37:58.613975 [debug] [MainThread]: running dbt with arguments {'version_check': 'True', 'no_print': 'None', 'static_parser': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'empty': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'debug': 'False', 'log_format': 'default', 'profiles_dir': 'C:\\Users\\matth\\My_Projects\\VBM_Hospital_Encounters_dbt_Project', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init', 'indirect_selection': 'eager', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m15:38:28.052543 [debug] [MainThread]: Starter project path: C:\Users\matth\AppData\Roaming\Python\Python312\site-packages\dbt\include\starter_project
+[0m15:38:28.081577 [info ] [MainThread]: 
+Your new dbt project "Hospital_Encounters_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m15:38:28.082579 [info ] [MainThread]: Setting up your profile.
+[0m15:38:45.456784 [info ] [MainThread]: No sample profile found for fabric.
+[0m15:38:45.456784 [debug] [MainThread]: Command `dbt init` succeeded at 15:38:45.456784 after 46.98 seconds
+[0m15:38:45.456784 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C48D29640>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C4A816E40>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000025C4A72A6C0>]}
+[0m15:38:45.456784 [debug] [MainThread]: An error was encountered while trying to send an event
+[0m15:38:45.456784 [debug] [MainThread]: Flushing usage events
