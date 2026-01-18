@@ -1,0 +1,32 @@
+version: 2
+
+sources:
+  - name: bronze
+    description: "Bronze (raw) hospital encounters table in Fabric Warehouse"
+    database: "{{ var('bronze_database') }}"
+    schema: "{{ var('bronze_schema') }}"
+    tables:
+      - name: encounters_raw
+        identifier: "{{ var('bronze_table') }}"
+        description: "Raw encounters extract loaded as a Warehouse table."
+        columns:
+          - name: encounter_id
+            description: "Unique identifier for each healthcare encounter."
+          - name: patient_id
+            description: "Unique identifier for each patient."
+          - name: encounter_date
+            description: "Date of the healthcare encounter."
+          - name: diagnosis_code
+            description: "Code representing the diagnosis made during the encounter."
+          - name: procedure_code
+            description: "Code representing the procedure performed during the encounter."
+          - name: provider_id
+            description: "Unique identifier for the healthcare provider."
+          - name: facility_id
+            description: "Unique identifier for the facility where the encounter took place."
+          - name: billing_amount
+            description: "Total amount billed for the encounter."
+          - name: payment_amount
+            description: "Total amount paid for the encounter."
+          - name: encounter_type
+            description: "Type of healthcare encounter (e.g., inpatient, outpatient, emergency)."
