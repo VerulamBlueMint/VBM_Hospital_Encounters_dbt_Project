@@ -1,0 +1,10 @@
+version: 2
+
+models:
+  - name: gold_encounters_final
+    description: "KPI-ready encounters filtered to calendar year 2025, with helper flags."
+    columns:
+      - name: encounter_id
+        tests: [not_null, unique]
+      - name: encounter_date
+        tests: [not_null]
