@@ -1,0 +1,5 @@
+version: 2
+
+analyses:
+  - name: profiling_after_standardisation
+    description: "{{ doc('profiling_findings_standardised') }}"
