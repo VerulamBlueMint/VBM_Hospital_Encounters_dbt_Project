@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: silver_encounters_final
+    description: "Final cleaned encounters dataset (all years). One row per encounter."
+    columns:
+      - name: encounter_id
+        tests: [not_null, unique]
+      - name: patient_id
+        tests: [not_null]
+      - name: encounter_date
+        tests: [not_null]
+      - name: discharge_date
+        tests: [not_null]
