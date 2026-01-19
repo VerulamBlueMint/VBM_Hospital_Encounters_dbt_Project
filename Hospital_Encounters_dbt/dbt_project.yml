@@ -42,10 +42,10 @@ models:
       +schema: gold
       +materialized: table
 
-    kpis:
-      +schema: gold
-      +materialized: view
-      +tags: ["kpis"]
+      kpis:
+        +schema: gold
+        +materialized: view
+        +tags: ["kpis"]
 
 seeds:
   Hospital_Encounters_dbt:
