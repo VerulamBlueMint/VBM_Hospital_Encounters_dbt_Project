@@ -1,0 +1,33 @@
+version: 2
+
+models:
+  - name: int_core_clean
+    description: "Core cleaned fields with placeholders + enforced is_admitted rule."
+    columns:
+      - name: bronze_row_id
+        tests: [not_null]
+
+      - name: encounter_type
+        tests:
+          - accepted_values:
+              values: ["Emergency","Inpatient","Observation","Outpatient","Unknown_Encounter"]
+
+      - name: department
+        tests:
+          - accepted_values:
+              values: ["A&E","Cardiology","Trauma_&_Orthopaedics","General_Medicine","Surgery","Paediatrics","ICU","Unknown_Department"]
+
+      - name: severity_level
+        tests:
+          - accepted_values:
+              values: ["Low","Medium","High","Critical","Unknown_Severity"]
+
+      - name: primary_diagnosis
+        tests:
+          - accepted_values:
+              values: ["Chest_Pain","Heart_Failure","Pneumonia","Hip_Fracture","Diabetes","COPD","Infection","Stroke","Other","Unknown_Diagnosis"]
+
+      - name: is_admitted
+        tests:
+          - accepted_values:
+              values: [0, 1]
