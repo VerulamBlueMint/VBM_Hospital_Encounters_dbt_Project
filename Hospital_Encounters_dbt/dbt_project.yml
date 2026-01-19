@@ -3,6 +3,7 @@ version: '1.0.0'
 
 profile: 'Hospital_Encounters_dbt'
 
+docs-paths: ["docs"]
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
