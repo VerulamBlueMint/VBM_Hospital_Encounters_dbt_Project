@@ -1,0 +1,12 @@
+version: 2
+
+exposures:
+  - name: healthcare_ops_kpis
+    type: dashboard
+    maturity: high
+    description: "Strong, production-ready operational KPI output built from kpi_results."
+    depends_on:
+      - ref('kpi_results')
+    owner:
+      name: "Verulam Blue Mint"
+      email: "vbm@verulamblue.com"
