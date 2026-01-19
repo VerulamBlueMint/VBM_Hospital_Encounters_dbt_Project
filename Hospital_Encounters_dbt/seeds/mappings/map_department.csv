@@ -1,0 +1,22 @@
+raw_value,canonical_value
+a & e,A&E
+a&e,A&E
+accident & emergency,A&E
+accident_and_emergency,A&E
+ae,A&E
+cardiology,Cardiology
+critical_care,ICU
+i.c.u.,ICU
+icu,ICU
+gen medicine,General_Medicine
+gen_med,General_Medicine
+general medicine,General_Medicine
+general_medicine,General_Medicine
+general_surgery,Surgery
+surgery,Surgery
+paediatrics,Paediatrics
+paeds,Paediatrics
+t&o,Trauma_&_Orthopaedics
+trauma & orthopaedics,Trauma_&_Orthopaedics
+trauma_&_orthopaedics,Trauma_&_Orthopaedics
+trauma_and_orthopaedics,Trauma_&_Orthopaedics

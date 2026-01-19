@@ -53,3 +53,7 @@ seeds:
       +schema: staging
       +quote_columns: false
 
+      map_admitted:
+        +column_types:
+          raw_value: varchar(10)
+          canonical_value: varchar(1)

@@ -1,0 +1,12 @@
+raw_value,canonical_value
+emerg.,Emergency
+emergancy,Emergency
+emergency,Emergency
+in patient,Inpatient
+in-patient,Inpatient
+inpatient,Inpatient
+obs,Observation
+observation,Observation
+out patient,Outpatient
+out-patient,Outpatient
+outpatient,Outpatient

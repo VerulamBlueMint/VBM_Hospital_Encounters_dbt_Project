@@ -1,0 +1,19 @@
+raw_value,canonical_value
+chest pain,Chest_Pain
+chest_pain,Chest_Pain
+heart failure,Heart_Failure
+heart_failure,Heart_Failure
+pneumonia,Pneumonia
+pnumonia,Pneumonia
+hip fracture,Hip_Fracture
+hip_fracture,Hip_Fracture
+diabetees,Diabetes
+diabetes,Diabetes
+c.o.p.d,COPD
+copd,COPD
+infection,Infection
+stroke,Stroke
+cva,Stroke
+misc,Other
+other,Other
+other_condition,Other

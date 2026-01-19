@@ -1,0 +1,60 @@
+version: 2
+
+seeds:
+  - name: map_encounter_type
+    description: "Maps messy encounter_type text to canonical values."
+    columns:
+      - name: raw_value
+        description: "Lowercased raw input value (after standardisation)."
+        tests: [not_null, unique]
+      - name: canonical_value
+        description: "Canonical encounter type."
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["Emergency", "Inpatient", "Observation", "Outpatient"]
+
+  - name: map_department
+    description: "Maps messy department text to canonical department names."
+    columns:
+      - name: raw_value
+        tests: [not_null, unique]
+      - name: canonical_value
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["A&E","Cardiology","Trauma_&_Orthopaedics","General_Medicine","Surgery","Paediatrics","ICU"]
+
+  - name: map_severity
+    description: "Maps messy severity text to canonical severity levels."
+    columns:
+      - name: raw_value
+        tests: [not_null, unique]
+      - name: canonical_value
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["Low", "Medium", "High", "Critical"]
+
+  - name: map_primary_diagnosis
+    description: "Maps messy primary diagnosis text to canonical categories."
+    columns:
+      - name: raw_value
+        tests: [not_null, unique]
+      - name: canonical_value
+        tests:
+          - not_null
+          - accepted_values:
+              values:
+                ["Chest_Pain","Heart_Failure","Pneumonia","Hip_Fracture","Diabetes","COPD","Infection","Stroke","Other"]
+
+  - name: map_admitted
+    description: "Maps messy boolean text to 0/1 admission flag."
+    columns:
+      - name: raw_value
+        tests: [not_null, unique]
+      - name: canonical_value
+        tests:
+          - not_null
+          - accepted_values:
+              values: ["0", "1"]
