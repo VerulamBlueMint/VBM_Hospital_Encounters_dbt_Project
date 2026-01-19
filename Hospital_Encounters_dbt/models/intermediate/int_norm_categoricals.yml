@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: int_norm_categoricals
+    description: "Intermediate model with canonical category mappings applied via seed tables."
+    columns:
+      - name: encounter_type_clean
+        tests:
+          - accepted_values:
+              values: ["Emergency", "Inpatient", "Observation", "Outpatient"]
+
+      - name: department_clean
+        tests:
+          - accepted_values:
+              values: ["A&E","Cardiology","Trauma_&_Orthopaedics","General_Medicine","Surgery","Paediatrics","ICU"]
+
+      - name: severity_level_clean
+        tests:
+          - accepted_values:
+              values: ["Low", "Medium", "High", "Critical"]
+
+      - name: primary_diagnosis_clean
+        tests:
+          - accepted_values:
+              values: ["Chest_Pain","Heart_Failure","Pneumonia","Hip_Fracture","Diabetes","COPD","Infection","Stroke","Other"]
