@@ -104,7 +104,7 @@ dbt build
 
 ## Notes
 - The rest of the runbook is split into small, inspectable steps:
-  - 01_raw_profile → 08_kpis_publish
+  - 01_raw_profile → 13_ kpis_and_kpi_results
 - Each step documents: goal, inputs/outputs, exact commands, and the guardrails that prevent silent bad data.
 
 
