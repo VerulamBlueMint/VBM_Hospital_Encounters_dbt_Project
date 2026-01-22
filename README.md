@@ -1,4 +1,4 @@
-# Verulam Blue Mint — Hospital Encounters (2025) | Operational KPI Findings
+# Verulam Blue — Hospital Encounters (2025) | Operational KPI Findings
 
 ![Project Status](https://img.shields.io/badge/status-complete-brightgreen) ![dbt](https://img.shields.io/badge/dbt-core-orange) ![Microsoft Fabric](https://img.shields.io/badge/platform-Microsoft%20Fabric-blue) ![Healthcare Analytics](https://img.shields.io/badge/domain-healthcare%20analytics-important)
 
